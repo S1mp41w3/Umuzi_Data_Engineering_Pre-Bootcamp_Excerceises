@@ -11,17 +11,20 @@ Task 10
 
 Write a function that takes in a string and then prints out all the vowels
 in the string.
- Make sure it can deal with capital letters and small letters.
+Make sure it can deal with capital letters and small letters.
 
 """
 
-def find_vowel(string):
-    vowel = ('a','A','e','E','i','I','o','O','u','U')
-    if vowel in string and string(str(string)(range(0,100))
-                                  return vowel
-                              else:
-                                  return   
 
-print(find_vowel('Amazing Umuzi'))
+def find_vowels(x):
+    
+    
+    vowels =['a','A','e','E','i','I','o','O','u','U']
+    out_ = set(x).intersection(vowels)
+    return out_
 
-#Not yet working
+  
+    
+print(find_vowels('amazing'))
+print(find_vowels('Umuzi'))
+print(find_vowels('Flood'))
