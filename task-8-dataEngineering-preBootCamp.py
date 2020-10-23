@@ -16,17 +16,16 @@ Make a function to convert any number into hours and minutes.
 """
 
 def time_conv(x):
-    hour = str(x // 60) + ' hour, '
+    hour = str(x // 60) + ' hour, ' 
     hours = str(x // 60) + ' hours, '
     minute = str(x % 60) + ' minutes'
+    if x <= 60:
+        return minute
     if x >= 120:
         return hours + minute 
     else:
-        if x <= 120:
-            return hour + minute
-        else: 
-            if x <= 60:
-                return minute
+        return hour + minute 
+    
         
         
 print(time_conv(50))
