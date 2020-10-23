@@ -17,14 +17,16 @@ Otherwise return false.
 
 def add_(x,y):
     
-    if x == 65 or y == 65 or add_ == 65:
+    if x == 65 or y == 65 or (x+y) == 65:
         return True
     else:
         return False
+    
         
 print(add_(33, 33))
 print(add_(60, 5))
 print(add_(65,0))
+
     
     
 
