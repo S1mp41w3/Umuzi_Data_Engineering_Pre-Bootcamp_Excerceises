@@ -15,13 +15,11 @@ and outputs the common characters/letters that they share.
 
 """ 
 
-def common_char(x,y):
-    z = x.intersection(y)
-    return z
 
-print(common_char('coding','crazy'))
+def Common_char(x,y):
+    out_ = set(x).intersection(y)
+    return out_
 
-           
-
-
-#Not yet working
+print(Common_char('Coding','Crazy'))
+print(Common_char('Good Moring','How are you?'))
+print(Common_char('Mercedes','Maserati'))
