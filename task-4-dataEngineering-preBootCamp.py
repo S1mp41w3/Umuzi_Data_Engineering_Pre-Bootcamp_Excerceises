@@ -16,8 +16,8 @@ Otherwise return false
 """
 
 def find_3(x,y):
-    
-    if x == 3 or y == 3 and str(3) in str(x+y): 
+    sum_ = str(x + y)
+    if (x == 3 or y == 3) and str(3) in sum_ : 
         return True
     else:
         return False
@@ -25,4 +25,5 @@ def find_3(x,y):
 print(find_3(10,3))
 print(find_3(7, 3))
 print(find_3(6,7))
+
 
